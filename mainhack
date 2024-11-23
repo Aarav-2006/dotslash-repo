@@ -1,0 +1,30 @@
+problem:
+In a busy university setting, tracking attendance shouldn’t feel like a throwback to grade school roll calls. 
+But for many universities, it's still a time-consuming process—requiring Resident Assistants or wardens to knock on dorm room doors, checklists in hand, as students wait around to be counted. 
+It’s disruptive, outdated, and often inconvenient for students who are scattered across campus in libraries, dining halls, or on the sports field.
+
+preliminary research:
+Polygon-based geofencing is a location-based technology that uses custom-defined geographical areas to trigger actions or validate events. Unlike circular geofences, which rely on a single center point and radius, polygon geofencing allows users to create precise, irregular boundaries by connecting multiple latitude and longitude points into a polygon.
+In practical applications, such as attendance systems, administrators can define geofenced zones by drawing polygons on a digital map. These polygons are stored as geospatial data and used to determine if a user's GPS location lies within the boundary. Algorithms like point-in-polygon calculations (using libraries such as Turf.js or PostGIS) ensure accurate location verification.
+Polygon geofencing is ideal for environments with irregular shapes, such as university campuses or housing complexes, as it provides more flexibility and precision compared to simple circular zones.
+
+
+solution: 
+Enter Uni-Link — the smart, campus-wide attendance solution designed for the modern universities.
+This application enables universities to set a designated radius within campus boundaries for attendance verification. 
+When it’s time to check in, students receive a notification on their mobile devices, prompting them to quickly authenticate with fingerprint . 
+The app then confirms their location using GPS, ensuring they’re within the campus radius without needing to return to their dorms.
+In less than 10 seconds, administrators have a comprehensive list of present students, and students can continue their activities without interruption.
+With Uni-Link, attendance goes digital—secure, efficient, and hassle-free. No more door-to-door checks, just a smart, streamlined solution for modern campus life.
+
+execution: 
+-For this we would be creating an intuitive app interface for students.The design will prioritize ease of use, with quick access to notifications, authentication, and attendance tracking.
+- The app would incorporate biometric authentication  to ensure secure identity verification for each student.
+-We would be using geofencing technology where we would set up the designated campus radus. thus allowing the app to accurately detect when students are within the defined area.
+- We would implement a real-time notification system to prompt students at scheduled attendance times. 
+-We have developed a robust backend to store student attendance data securely and generate real-time attendance lists for administrators.
+-We would create a dashboard for university administrators to manage attendance records, set attendance times, and view real-time data on student presence
+
+
+
+
